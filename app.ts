@@ -19,4 +19,4 @@ server.use('/api',routerUser);
 server.use('/api',productRoute);
 
 server.use(globalErrorHandler);
-server.listen(process.env.PORT);
+server.listen(Number(process.env.PORT)||5500,"0.0.0.0");
